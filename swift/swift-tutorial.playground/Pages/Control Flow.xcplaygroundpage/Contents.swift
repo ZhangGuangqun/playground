@@ -59,6 +59,24 @@ repeat {
 } while m < 100
 print(m)
 
+// 数组和字典的 for-in
+
+let interestingNumbers = [
+    "Prime": [2, 3, 5, 7, 11, 13],
+    "Fibonacci": [1, 1, 2, 3, 5, 8],
+    "Square": [1, 4, 9, 16, 25],
+]
+var largest = 0
+for (kind, numbers) in interestingNumbers {
+    for number in numbers {
+        if number > largest {
+            largest = number
+        }
+    }
+}
+print(largest)
+// Prints "25"
+
 // 使用 ..< 来遍历一个范围的索引，..< 不包括上界值。使用 ... 可以包含两边的值
 
 var total = 0
