@@ -32,7 +32,7 @@ let defaultName =  "Zhang San"
 let name = nickName ?? defaultName
 print(name)
 
-// Switches 支持任何类型的数据和多样的比较的类型。每个 case 后面不需要加 break, 执行一个分支后继续往后执行。
+// Switches 支持任何类型的数据和多样的比较的类型。每个 case 后面不需要加 break, 执行一个分支后不会继续往后执行。
 let fruits = "香蕉"
 switch fruits {
 case "苹果":
